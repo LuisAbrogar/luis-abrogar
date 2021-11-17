@@ -27,6 +27,7 @@ const proj_titles = ["                ", "CyclingCompanion", "4-Stage Pipelined 
 		var vTop = $('div.text').scrollTop();
 		var vBot = vTop + $('div.text').height();
 
+		/*
 		if($(this).attr("id") == "p0") {
 			console.log($(this).attr("id") + ":"
 						+"\neTop: " + eTop 
@@ -34,17 +35,18 @@ const proj_titles = ["                ", "CyclingCompanion", "4-Stage Pipelined 
 						+"\nvTop: " + vTop
 						+"\nvBot: " + vBot);
 		}
+		*/
 		
 		return ((eBot > vTop) && (eTop < vBot))
 	}
 
-	$('div.text').on('scroll', function() {
+	$('div#projs.text').on('scroll', function() {
 		//timer = 0;
 		//if(timer) {
 			//window.clearTimeout(timer);
 		//}
 		//timer = window.setTimeout(function() {
-			$('section').each(function(index) {
+			$('div.projs-section').each(function(index) {
 				if($(this).inView()) {
 					//console.log($(this).attr("id") + " is in view");
 					$("#proj-name").text(proj_titles[index]);

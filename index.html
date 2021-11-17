@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
        <meta charset= "utf-8">
        <title>Luis Abrogar</title>
-       <link rel= "stylesheet" href="css\style.css">
+       <link rel= "stylesheet" href="css/style.css">
        <link rel= "icon" href="./img/LAlogo.png">
 </head>
 
@@ -24,58 +24,58 @@
                     <span class="wtext txt_lg hidden" id="proj-name"></span>
              </div>
              <div class="text">
-                    <p id="homeTop" class="btext txt_lg ">Hi, my name is </p>
-                    <p id="home"    class="name">Luis Abrogar</p>
-                    <p id="home"    class="wtext txt_lg"><--<span class="btext txt_lg">  menu</span></p>
-                    <p id="home"    class="btext txt_lg">connect with me  <span id="home" class="wtext txt_lg">--></span></p>
+                    <p class="homeTop btext txt_lg ">Hi, my name is </p>
+                    <p class="home name">Luis Abrogar</p>
+                    <p class="home wtext txt_lg">&lt;--<span class="btext txt_lg">  menu</span></p>
+                    <p class="home btext txt_lg">connect with me  <span class="home wtext txt_lg">--&gt;</span></p>
              </div>
              <div class="text">
                      <div id="ambar">
-                            <img src="./img/me.jpg">
+                            <img src="./img/me.jpg" alt="Luis Abrogar">
                             <span id="s1" class="wtext txt_md">B.E. Computer Engineering '21</span>
                             <span id="s2" class="wtext txt_md">Stony Brook University</span>
                      </div>
                      <div id="amtri"></div>
                      <div class="am">
-                            <p id="desc" class="wtext txt_sm">I am currently a senior Computer Engineering student at Stony Brook University, expected to graduate this coming December. I am very passionate about technology and love learning about its many different aspects and applications – especially the software since it can be molded to fit a variety of services and needs. </p>
+                            <p class="desc wtext txt_sm">I am currently a senior Computer Engineering student at Stony Brook University, expected to graduate this coming December. I am very passionate about technology and love learning about its many different aspects and applications – especially the software since it can be molded to fit a variety of services and needs. </p>
                             <p id="header" class="btext txt_md">Work Experience</p><hr>
                             <p>
                                    <span id="l" class="wtext txt_md">Media Systems Engineering Assistant</span>
                                    <span id="r" class="btext txt_sm">Stony Brook University AV Department</span></p>
-                            <p id="desc" class="wtext txt_sm">Performed weekly maintenance of campus-wide media systems and technology, reported and resolved support requests, and worked with engineering teams to install new systems</p>
+                            <p class="desc wtext txt_sm">Performed weekly maintenance of campus-wide media systems and technology, reported and resolved support requests, and worked with engineering teams to install new systems</p>
 
                             <p id="point" class="btext txt_sm">View my full resume on my LinkedIn Profile <span class=wtext>--></span></p>
                      </div>
               </div>
-             <div id ="projs"class="text">
-                     <section id="p0" class="proj top">
+             <div id ="projs" class="text">
+                     <div id="p0" class="projs-section proj top">
                             <p class="wtext txt_md" id="proj-slide">Project Descriptions</p>
                             <p class="btext txt_sm" >scroll down for more</p>
-                     </section>
-                     <section id="p1" class="proj hidden">
-                            <img src="./img/cyclingcompanion.jpg"  class="proj-img">
-                            <p class="wtext txt_sm" id="proj-desc">CyclingCompanion is an Android app written in Java on Android Studio that tracks a user’s live ride data such as average speed, elevation, total distance, and elapsed time each time a new ride is started. Using the Google Maps API, it tracks the live route the user is taking until the ride is completed. Google Firebase real-time database is used to store the ride statistics such as average speed and total distance, which can be viewed in the user’s ride history.</p>
-                     </section>
-                     <section id="p2" class="proj hidden">
-                            <img src="./img/mmu.jpg" class="proj-img">
-                            <p class="wtext txt_sm" id="proj-desc">A design written in VHDL; this multimedia unit is comprised of 4 main components with 25-bit instructions and 128-bit registers in an instruction pipeline with 25 ALU functions. The instruction buffer has an instruction input and a control signal which allows the input to be stored. The register file holds 32 registers and is capable of 3 reads and 1 write in each cycle. The forwarding unit ensures the most recent register value is used and the ALU takes 3 register inputs and an instruction input, calculating based on the specified instruction and sending the result to the specified register.</p>
-                     </section>
-                     <section id="p3" class="proj hidden">
-                            <img src="./img/textmining.jpg" class="proj-img">
-                            <p class="wtext txt_sm" id="proj-desc">A text mining solution written in Python that can extract both organized and meaningful data from a large body of unstructured text. Using a survey in .csv format, the program can determine the overall sentiment of each response and extract key words or topics from them, helping a user understand the survey results.</p>
-                     </section>
-                     <section id="p4" class="proj hidden">
-                            <img src="./img/solstice.jpg" class="proj-img">
-                            <p class="wtext txt_sm" id="proj-desc">Written in python; this program pulls a classroom’s live scheduling information from Google Calendar and pushes it into the corresponding room’s installed Solstice Pod – allowing students and faculty to see the room’s upcoming availability and whom it is assigned to at any given time. This was created before full support for Google Calendar was created and fully made available by Mersive.</p>
-                            </section>
-                     <section id="p5" class="proj hidden">
-                            <img src="./img/micromouse.jpg" class="proj-img">
-                            <p class="wtext txt_sm" id="proj-desc">Member of the 2019 IEEE Chapter at Stony Brook University’s Micromouse team. Tuned the robot to improve its ability to detect walls and openings and performed any necessary maintenance. Placed 3rd in the 2019 IEEE Region 1 Micromouse Competition. </p>
-                            </section>
-                     <section id="p6" class="proj hidden">
-                            <img src="./img/ledclock.jpg" class="proj-img">
-                            <p class="wtext txt_sm" id="proj-desc">A fully functional digital clock with basic timekeeping functions, 12hr/24hr format, alarm, USB charging port, and LED binary seconds counter. Programmed in x86 Assembly and simulated in PSpice.</p>
-                            </section>
+                     </div>
+                     <div id="p1" class="projs-section proj hidden">
+                            <img src="./img/cyclingcompanion.jpg"  alt="CyclingCompanion" class="proj-img">
+                            <p class="proj-desc wtext txt_sm" >CyclingCompanion is an Android app written in Java on Android Studio that tracks a user’s live ride data such as average speed, elevation, total distance, and elapsed time each time a new ride is started. Using the Google Maps API, it tracks the live route the user is taking until the ride is completed. Google Firebase real-time database is used to store the ride statistics such as average speed and total distance, which can be viewed in the user’s ride history.</p>
+                     </div>
+                     <div id="p2" class="projs-section proj hidden">
+                            <img src="./img/mmu.jpg" alt="MMU" class="proj-img">
+                            <p class="proj-desc wtext txt_sm" >A design written in VHDL; this multimedia unit is comprised of 4 main components with 25-bit instructions and 128-bit registers in an instruction pipeline with 25 ALU functions. The instruction buffer has an instruction input and a control signal which allows the input to be stored. The register file holds 32 registers and is capable of 3 reads and 1 write in each cycle. The forwarding unit ensures the most recent register value is used and the ALU takes 3 register inputs and an instruction input, calculating based on the specified instruction and sending the result to the specified register.</p>
+                     </div>
+                     <div id="p3" class="projs-section proj hidden">
+                            <img src="./img/textmining.jpg" alt="Text Mining" class="proj-img">
+                            <p class="proj-desc wtext txt_sm" >A text mining solution written in Python that can extract both organized and meaningful data from a large body of unstructured text. Using a survey in .csv format, the program can determine the overall sentiment of each response and extract key words or topics from them, helping a user understand the survey results.</p>
+                     </div>
+                     <div id="p4" class="projs-section proj hidden">
+                            <img src="./img/solstice.jpg" alt="Solstice" class="proj-img">
+                            <p class="proj-desc wtext txt_sm" >Written in python; this program pulls a classroom’s live scheduling information from Google Calendar and pushes it into the corresponding room’s installed Solstice Pod – allowing students and faculty to see the room’s upcoming availability and whom it is assigned to at any given time. This was created before full support for Google Calendar was created and fully made available by Mersive.</p>
+                            </div>
+                     <div id="p5" class="projs-section proj hidden">
+                            <img src="./img/micromouse.jpg" alt="Micromouse" class="proj-img">
+                            <p class="proj-desc wtext txt_sm">Member of the 2019 IEEE Chapter at Stony Brook University’s Micromouse team. Tuned the robot to improve its ability to detect walls and openings and performed any necessary maintenance. Placed 3rd in the 2019 IEEE Region 1 Micromouse Competition. </p>
+                            </div>
+                     <div id="p6" class="projs-section proj hidden">
+                            <img src="./img/ledclock.jpg" alt="LED Clock" class="proj-img">
+                            <p class="proj-desc wtext txt_sm">A fully functional digital clock with basic timekeeping functions, 12hr/24hr format, alarm, USB charging port, and LED binary seconds counter. Programmed in x86 Assembly and simulated in PSpice.</p>
+                            </div>
              </div>
 
        </div>
@@ -109,7 +109,7 @@
 
 
        <!-- Scripts -->
-       <script src= "js\jquery-3.6.0.min.js"></script>
-       <script src= "js\script.js"></script>
+       <script src= "js/jquery-3.6.0.min.js"></script>
+       <script src= "js/script.js"></script>
 </body>
 </html>

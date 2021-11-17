@@ -144,22 +144,22 @@ div#bar{
 	transition: opacity 1s ease;
 }
 /*home -------------------------- */
-p#homeTop {
+p.homeTop {
 	border: 0px;
 	margin-top:  10%;
 	margin-left: 8%;
 	margin-bottom:  0px;
 	font-family: 'Roboto Mono';
 }
-p#home {
+p.home {
 	margin-top:  0px;
 	margin-left: 8%;
 	font-family: 'Roboto Mono';
 }
-span#home {
+span.home {
 	font-family: 'Roboto Mono';
 }
-p#home.name {
+p.home.name {
 	color: white;
 	font-size:  100px;
 	font-weight: bold;
@@ -213,7 +213,7 @@ div.am {
 	margin-right: 4%;
 }
 
-p#desc {
+p.desc {
 	padding-right: 20px;
 	line-height: 200%;
 	overflow-wrap: break-word;
@@ -240,7 +240,7 @@ p#point {
 	overflow: scroll;
 	scroll-behavior: smooth;
 }
-.text section{
+#projs.text div{
 	height: 100%;
 	text-align: center;
 	border: 0;
@@ -249,7 +249,7 @@ p#point {
 ::-webkit-scrollbar {
 	width: 0;
 }
-p#proj-desc{
+p.proj-desc{
 	margin-left: 4%;
 	margin-right: 4%;
 	font-size: 20px;
