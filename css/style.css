@@ -51,15 +51,15 @@ div.col {
 
 /* fonts -------------------------------------------------------*/
 .txt_sm {
-	font-size: 1.25rem;
+	font-size: 1vw;
 	font-family: 'Roboto Mono';
 }
 .txt_md {
-	font-size: 1.875rem;
+	font-size: 1.75vw;
 	font-family: 'Roboto Mono';
 }
 .txt_lg {
-	font-size: 2.5rem;
+	font-size: 2.2vw;
 	font-family: 'Archivo';
 }
 .wtext {
@@ -275,7 +275,6 @@ p#point {
 p.proj-desc{
 	margin-left: 4%;
 	margin-right: 4%;
-	font-size: 20px;
 	font-style: italic;
 	line-height: 200%;
 }
