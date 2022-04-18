@@ -50,6 +50,10 @@ div.col {
 }
 
 /* fonts -------------------------------------------------------*/
+.txt_xs {
+	font-size:  0.85vw;
+	font-family:  'Roboto Mono';
+}
 .txt_sm {
 	font-size: 1vw;
 	font-family: 'Roboto Mono';
@@ -67,6 +71,12 @@ div.col {
 }
 .btext {
 	color: #4B3FBF;
+}
+.ital {
+	font-style: italic;
+}
+.bold {
+	font-weight: bold;
 }
 /* left col ----------------------------------------------------*/
 div.col#menu {
@@ -112,6 +122,27 @@ button span.txt_lg {
 	font-weight: 500;
 }
 
+div #resume {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 3%;
+	margin-bottom: 10%;
+	padding-top: 7%;
+	border-top: 10px solid #262626 ;
+	text-align: center;
+}
+
+#resume a {
+	font-family: 'Archivo';
+	font-size:  1.25vw;
+	text-decoration: none;
+}
+#resume a:hover {
+	color: white;
+	cursor: pointer;
+}
+
 /* mid col ----------------------------------------------------*/
 div.col#content {
 	width: 75%;
@@ -132,8 +163,8 @@ div#bar{
 #bar span#amname {
 	position: absolute;
 	/*top: 40px;*/
-	top: 4%;
-	margin-left: -27%;
+	top: 5%;
+	margin-left: -30%;
 }
 
 #bar span#proj-name {
@@ -143,7 +174,7 @@ div#bar{
 	font-family: 'Roboto Mono';
 	transition: opacity 1s ease;
 }
-/*home -------------------------- */
+/*home page -------------------------- */
 p.homeTop {
 	border: 0px;
 	margin-top:  10%;
@@ -170,10 +201,11 @@ div.text {
 	width: 	100%;
 	height: 88%;
 }
-/* about me --------------------------*/
+/* about me page  --------------------------*/
+/* blue bar */
 div#ambar{
 	background-color: #4B3FBF;
-	width: 90%;
+	width: 50%;
 	height: 12.75%;
 	float: left;
 	position: relative;
@@ -182,33 +214,45 @@ div#ambar{
 	font-family: 'Roboto Mono';
 	display: inline-block;
 	position: relative;
-	margin-left: 3.5%;
+	margin-left: 7%;
 	margin-top: 0.9%;
 	margin-bottom: 0.9%;
+	width: 50%;
+	padding-top: 1%;
+}
+/*small icons */
+.block img {
+	position: relative;
+	float: left;
+	height: 5%;
+	width:  5%;
+}
+.block span {
+	display: block;
+	margin-left: 10%;
+}
+
+span #s1 {
+	font-style: italic;
+	font-weight: bold;
+	margin-bottom: 5%;
 }
 #ambar #imholder {
 	display: inline-block;
 	position: relative;
 	float: left;
-	margin-top: -7.8%;
+	margin-top: -13.5%;
 	margin-left: 8%;
 	height: 175%;
-	width: 13.9%;
+	width: 25%;
 }
 
-#imholder img {
+#imhold.er img {
 	height: 100%;
 	width: 100%;
 }
 
-span#s1 {
-	margin-top: 0.9%;
-	font-style: italic;
-}
-span#s2 {
-	font-weight: bold;
-	display: block;
-}
+/*triangle*/
 div #amtri {
 		width: 0;
     height: 0;
@@ -236,27 +280,35 @@ div.am {
 	margin-right: 4%;
 }
 
+.am p {
+	margin-bottom: 3%;
+}
+
 p.desc {
 	padding-right: 20px;
-	line-height: 200%;
+	line-height: 150%;
 	overflow-wrap: break-word;
-	font-style: italic;
 }
 p#header {
+	width: 100%;
+	text-align: left;
+	border-bottom: 1px solid white;
+	line-height:  0.1em;
+}
+#header span {
+	padding:  0 10px;
+	background: #262626;
+	margin-left: -1%;
 	font-weight: bold;
 }
-span#l {
-	font-weight: bold;
+
+.am ul {
+	margin-left: 2%;
 }
-span#r {
-	right: 0;
-	position: absolute;
-	font-style: italic;
-	font-weight: bold;
-}
-p#point {
-	margin-top: 10%;
-	font-weight: bold;
+.am table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0 1em;
 }
 /* projects --------------------------*/
 #projs {
