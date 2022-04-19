@@ -3,3 +3,6 @@
   - adjusted images and boxes for smaller window widths, still working on formatting for different media types
 - 11/19
   - text is more responsive on different browser widths, still have to work on mobile media type
+- 4/18
+  - updated 'About Me' page
+  - added resume download button
