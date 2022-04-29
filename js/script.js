@@ -1,5 +1,5 @@
 var section_p = document.getElementById('projs');
-const proj_titles = ["                ", "CyclingCompanion", "4-Stage Pipelined MMU", "Survey Data Text Mining", "Mersive Solstice - Google Calendar Integration", "IEEE Micromouse", "8-Segment LED Digital Clock"];
+const proj_titles = ["                ", "Multi-Functional Calculator","CyclingCompanion", "4-Stage Pipelined MMU", "Survey Data Text Mining", "Mersive Solstice - Google Calendar Integration", "IEEE Micromouse", "8-Segment LED Digital Clock"];
 (function($) {
 	let x = 1000
 	$('#amname').hide()
