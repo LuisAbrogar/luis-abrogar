@@ -1,142 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-       <meta charset= "utf-8">
-       <title>Luis Abrogar</title>
-       <link rel= "stylesheet" href="css/style.css">
-       <link rel= "icon" href="./img/LAlogo.png">
-</head>
-
-<body>
-       <div class="col" id="menu">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="icon" href="./img/LAlogo.png">
+    <title>Luis Abrogar</title>
+  </head>
+  <body>
+    <div class="row top">
+      <div class="col">
+        <img id="site_logo" src="./img/LAlogo.png" alt="Site logo">
+      </div>
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
+    <div class="row bot">
+      <!-- LEFT MENU -->
+      <div class="col">
+        <div class="menu">
+          <button data-rel="1" class="active"><span class="txt_lg font2">Home</span></button>
+          <button data-rel="2" ><span class="txt_lg font2">About</span></button>
+          <button data-rel="3" ><span class="txt_lg font2">Projects</span></button>
+          <div id="resume"><a><span class="txt_lg font2">Resume</span></a></div>
+        </div>
+      </div>
+      <!-- MIDDLE CONTENT -->
+      <div class="col">
+        <!-- HOME PAGE -->
+        <div id="home" class="content">
+          <div>
+            <p class="txt_lg font1 btext">Hi, my name is</p>
+            <p id="name" class="font1 wtext">Luis Abrogar</p>
+            <p class="txt_lg font1 wtext">&#60;&#45;&#45; <span class="btext">menu</span></p>
+            <p class="txt_lg font1 wtext"><span class="btext">connect with me </span>&#45;&#45;&#62;</p>
+          </div>      
+        </div>
+        <!-- ABOUT PAGE -->
+        <div id="about" class="content">
+          <div class="col">
+            <div class="row header">
+              <div>
+                <img id="am_pic" src="./img/me.png" alt="Pic of Me">
+              </div>
               <div class="title">
-                     <img src="./img/LAlogo.png" alt="Luis Abrogar">
+                <div>
+                  <span class="txt_lg font1 wtext bold about_name">Luis Abrogar</span>
+                </div>
+                <div class="sub">
+                  <div><img src="./img/grad.png" alt="icon"></div>
+                  <div>
+                    <div><span class="txt_xs font1 wtext">B.E. Computer Engineering</span></div>
+                    <div><span class="txt_xs font1 wtext ital bold">Stony Brook University</span></div>
+                  </div>
+                </div>
+                <div class="sub">
+                  <div><img id="pin" src="./img/pin.png" alt="icon"></div>
+                  <div>
+                    <div><span class="txt_xs font1 wtext">Valley Stream, NY</span></div>
+                  </div>
+                </div>
               </div>
-              <div class="btns">            
-                     <button data-rel="2" class="active"><span class="txt_lg">Home</span></button>
-                     <button data-rel="3" id="am"><span class="txt_lg">About Me</span></button>
-                     <button data-rel="4" id="pr"><span class="txt_lg">Projects</span></button>
+              <div></div>
+            </div>
+            <div class="row">
+              <p class="txt_sm font1 wtext">I am a graduate with a Bachelor&#39;s degree in Computer Engineering from <span class="ital">Stony Brook University</span></p>
+              <p class="txt_sm font1 wtext">I am very curious about technology and believe in its infinite possibilities to be molded to fulfill a variety of needs and services &#45; so I love to learn about its varying aspects and applications</p>
+              <p class="txt_sm font1 wtext">My ability to quickly learn&#44; as well as my growing curiosity keep me inspired to continue to study this field&#44; and I am open to opportunities that will allow me to grow in this area</p>
+            </div>
+          </div>
+          <div id="about_left" class="col">
+            <div class="skls_title">
+              <div></div>
+              <div><span class="txt_sm font1 wtext bold">Development Languages</span></div>
+            </div>
+            <div class="skls">
+              <div>
+                <ul class="txt_xs font2 wtext">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Java</li>
+                </ul>
               </div>
-
-              <div id="resume"><a class ="btext bold" href="./img/resume.pdf" download="resume">Download Resume</a></div>
-       </div>
-       <div class="col" id="content">
-             <div id="bar">
-                    <span class="wtext txt_md" id="amname">Luis Abrogar</span>
-                    <span class="wtext txt_lg hidden" id="proj-name"></span>
-             </div>
-             <!-- HOME PAGE -->
-             <div class="text">
-                    <p class="homeTop btext txt_lg ">Hi, my name is </p>
-                    <p class="home name">Luis Abrogar</p>
-                    <p class="home wtext txt_lg">&lt;--<span class="btext txt_lg">  menu</span></p>
-                    <p class="home btext txt_lg">connect with me  <span class="home wtext txt_lg">--&gt;</span></p>
-             </div>
-             <!-- ABOUT ME PAGE -->
-             <div class="text">
-                     <!-- blue subtitle bar -->
-                     <div id="ambar">
-                            <span id="imholder"><img src="./img/me2.png" alt="Luis Abrogar"></span>
-                            <span class="block">
-                                   <img src="./img/grad.png" alt="grad">
-                                   <span class="wtext txt_xs">B.E. Computer Engineering '21</span>
-                                   <span id="s1" class="wtext txt_xs">Stony Brook University</span>
-                                   <img src="./img/pin.png" alt="location">
-                                   <span class="wtext txt_xs">Valley Stream, NY</span>
-                            </span>
-                     </div>
-                     <div id="amtri"></div>
-
-                     <!--text -->
-                     <div id="am">
-                            <!--two columns-->
-                            <div class="wtext txt_sm">
-                                   <p>I am a graduate with a Bachelor’s degree in <span class="bold">Computer Engineering</span> from Stony Brook University.</p>
-                                   <p>I am very passionate about technology and love learning about its many different aspects and applications – especially the software since it can be molded to fit a variety of services and needs.</p>
-                                   <p>My growing curiosity about the vastness of the capabilities of applications allows me to learn quickly, and I am open to opportunities that will allow me to enter this field.</p>
-                            </div>
-                            <div id="am_leftCol" class="wtext txt_sm">
-                                   <p class="bold ital btext">Languages:</p>
-                                   <p class="ind">Java, Python, HTML, CSS, JavaScript,</p>
-                                   <p class="ind">C/C++, SQL, VHDL, VERILOG</p>
-                                   <p class="bold ital btext">IDEs / Editors:</p>
-                                   <p class="ind">Microsoft Visual Studio / VS Code, Eclipse</p>
-                                   <p class="ind">Android Studio, Spyder IDE, Active-HDL</p>
-                                   <p class="bold ital btext">Tools:</p>
-                                   <p class="ind">Git/GitHub, Microsoft Office (Word,</p>
-                                   <p class="ind">Excel, PowerPoint, Publisher),</p>
-                                   <p class="ind">Adobe Illustrator</p>
-                            </div>
-                     </div>
+              <div>
+                <ul class="txt_xs font2 wtext">
+                  <li>Python</li>
+                  <li>SQL</li>
+                  <li>VHDL</li>
+                  <li>VERILOG</li>
+                </ul>
               </div>
-              <!-- PROJECTS PAGE -->
-             <div id ="projs" class="text">
-                     <div id="p0" class="projs-section proj top">
-                            <p class="wtext txt_md" id="proj-slide">Project Descriptions</p>
-                            <p class="btext txt_sm" >scroll down for more</p>
-                     </div>
-                     <div id="p1" class="projs-section proj hidden">
-                            <img src="./img/calculator.jpg"  alt="calculator" class="proj-img">
-                            <p class="proj-desc wtext txt_sm" >An Android app with three main calculator functions: basic signed decimal arithmetic, restaurant tip and split amount, and a unit converter</p>
-                     </div>
-                     <div id="p2" class="projs-section proj hidden">
-                            <img src="./img/cyclingcompanion.jpg"  alt="CyclingCompanion" class="proj-img">
-                            <p class="proj-desc wtext txt_sm" >CyclingCompanion is an Android app written in Java on Android Studio that tracks a user’s live ride data such as average speed, elevation, total distance, and elapsed time each time a new ride is started. Using the Google Maps API, it tracks the live route the user is taking until the ride is completed. Google Firebase real-time database is used to store the ride statistics such as average speed and total distance, which can be viewed in the user’s ride history.</p>
-                     </div>
-                     <div id="p3" class="projs-section proj hidden">
-                            <img src="./img/mmu.jpg" alt="MMU" class="proj-img">
-                            <p class="proj-desc wtext txt_sm" >A design written in VHDL; this multimedia unit is comprised of 4 main components with 25-bit instructions and 128-bit registers in an instruction pipeline with 25 ALU functions. The instruction buffer has an instruction input and a control signal which allows the input to be stored. The register file holds 32 registers and is capable of 3 reads and 1 write in each cycle. The forwarding unit ensures the most recent register value is used and the ALU takes 3 register inputs and an instruction input, calculating based on the specified instruction and sending the result to the specified register.</p>
-                     </div>
-                     <div id="p4" class="projs-section proj hidden">
-                            <img src="./img/textmining.jpg" alt="Text Mining" class="proj-img">
-                            <p class="proj-desc wtext txt_sm" >A text mining solution written in Python that can extract both organized and meaningful data from a large body of unstructured text. Using a survey in .csv format, the program can determine the overall sentiment of each response and extract key words or topics from them, helping a user understand the survey results.</p>
-                     </div>
-                     <div id="p5" class="projs-section proj hidden">
-                            <img src="./img/solstice.jpg" alt="Solstice" class="proj-img">
-                            <p class="proj-desc wtext txt_sm" >Written in python; this program pulls a classroom’s live scheduling information from Google Calendar and pushes it into the corresponding room’s installed Solstice Pod – allowing students and faculty to see the room’s upcoming availability and whom it is assigned to at any given time. This was created before full support for Google Calendar was created and fully made available by Mersive.</p>
-                            </div>
-                     <div id="p6" class="projs-section proj hidden">
-                            <img src="./img/micromouse.jpg" alt="Micromouse" class="proj-img">
-                            <p class="proj-desc wtext txt_sm">Member of the 2019 IEEE Chapter at Stony Brook University’s Micromouse team. Tuned the robot to improve its ability to detect walls and openings and performed any necessary maintenance. Placed 3rd in the 2019 IEEE Region 1 Micromouse Competition. </p>
-                            </div>
-                     <div id="p7" class="projs-section proj hidden">
-                            <img src="./img/ledclock.jpg" alt="LED Clock" class="proj-img">
-                            <p class="proj-desc wtext txt_sm">A fully functional digital clock with basic timekeeping functions, 12hr/24hr format, alarm, USB charging port, and LED binary seconds counter. Programmed in x86 Assembly and simulated in PSpice.</p>
-                            </div>
-             </div>
-
-       </div>
-       <div class="col" id="sbar">
-              <div id="triholder">
-                     <div id="tri"></div>
+            </div>
+            <div class="skls_title">
+              <div></div>
+              <div><span class="txt_sm font1 wtext bold">IDEs</span></div>
+            </div>
+            <div class="skls">
+              <div>
+                <ul class="txt_xs font2 wtext">
+                  <li>Microsoft Visual Studio / VS Code</li>
+                  <li>Eclipse</li>
+                  <li>Android Studio</li>
+                  <li>Spyder IDE</li>
+                </ul>
               </div>
-              <div id="vline"></div>
-              <div class="imgs">
-                     <a href="https://github.com/LuisAbrogar/" target="_blank">
-                            <img src="./img/github.png" alt="gitHub" class ="icon"
-                            onmouseover="this.src='./img/github2.png'"
-                            onmouseout="this.src='./img/github.png'">
-                     </a>
+              <div>
+                <ul class="txt_xs font2 wtext">
+                  <li>Active-HDL</li>
+                </ul>
               </div>
-              <div class="imgs">
-                     <a href="https://www.linkedin.com/in/luis-abrogar/" target="_blank">
-                            <img src="img/linkedin.png" alt="linkedIn" class="icon"
-                            onmouseover="this.src='./img/linkedin2.png'"
-                            onmouseout="this.src='./img/linkedin.png'" >
-                     </a>
+            </div>
+            <div class="skls_title">
+              <div></div>
+              <div><span class="txt_sm font1 wtext bold">IT Software</span></div>
+            </div>
+            <div class="skls">
+              <div>
+                <ul class="txt_xs font2 wtext">
+                  <li>Quest KACE Systems Management</li>
+                  <li>SAP Crystal Reports</li>
+                  <li>Cherwell Service Management</li>
+                  <li>Tableau</li>
+                </ul>
               </div>
-              <div class="imgs">
-                     <a href="mailto:luis.abrogar@gmail.com" target="_blank">
-                            <img src="img/email.png" alt="email" class="icon"
-                            onmouseover="this.src='./img/email2.png'"
-                            onmouseout="this.src='./img/email.png'">
-                     </a>
+              <div></div>
+            </div>
+            <div class="skls_title">
+              <div></div>
+              <div><span class="txt_sm font1 wtext bold">Miscellaneous</span></div>
+            </div>
+            <div class="skls">
+              <div><ul class="txt_xs font2 wtext">
+                <li>Netsmart myAvatar EHR</li>
+                <li>NextGen EHR&#47;EMR</li>
+                <li>Microsoft Office &#40;Word&#44; Excel&#44; Publisher&#44; Powerpoint&#41;</li>
+                <li>Git/GitHub</li>
+              </ul>
+            </div>
+              <div>
+                <ul class="txt_xs font2 wtext">
+                  <li>Drupal</li>
+                  <li>Wix</li>
+                  <li>UiPath RPA</li>
+                  <li>Adobe Illustrator</li>
+                </ul>
               </div>
-       </div>
-
-
-       <!-- Scripts -->
-       <script src= "js/jquery-3.6.0.min.js"></script>
-       <script src= "js/script.js"></script>
-</body>
+            </div>
+          </div>
+        </div>
+        <!-- PROJECTS PAGE -->
+        <div class="content">
+          <div id="projs">
+            <div>
+              <div class="proj_name">
+                <span class="txt_md font2 wtext">Multi-Function Calculator</span>
+              </div>
+              <div class="proj_img">
+                <a class="proj_menu" data-rel="0" href="#popup"><img src="./img/calculator2.jpg" alt="Multi-Function Calculator"></a>
+              </div>
+            </div>
+            <div>
+              <div class="proj_name">
+                <span class="txt_md font2 wtext">CyclingCompanion</span>
+              </div>
+              <div class="proj_img">
+                <a class="proj_menu" data-rel="1" href="#popup"><img src="./img/cyclingcompanion.jpg" alt="CyclingCompanion"></a>
+              </div>
+            </div>
+            <div>
+              <div class="proj_name">
+                <span class="txt_md font2 wtext">Pipelined MMU</span>
+              </div>
+              <div class="proj_img">
+                <a class="proj_menu" data-rel="2" href="#popup"><img src="./img/mmu.jpg" alt="Pipelined MMU"></a>
+              </div>
+            </div>
+            <div>
+              <div class="proj_name">
+                <span class="txt_md font2 wtext">Survey Text Miner</span>
+              </div>
+              <div class="proj_img">
+                <a class="proj_menu" data-rel="3" href="#popup"><img src="./img/textmining2.jpg" alt="Survey Text Miner"></a>
+              </div>
+            </div>
+            <div>
+              <div class="proj_name">
+                <span class="txt_md font2 wtext">Solstice Google Calendar Mod</span>
+              </div>
+              <div class="proj_img">
+                <a class="proj_menu" data-rel="4" href="#popup"><img src="./img/solstice2.jpg" alt="Solstice Google Calendar Mod"></a>
+              </div>
+            </div>
+            <div>
+              <div class="proj_name">
+                <span class="txt_md font2 wtext">IEEE Micromouse</span>
+              </div>
+              <div class="proj_img">
+                <a class="proj_menu" data-rel="5" href="#popup"><img src="./img/micromouse2.jpg" alt="IEE Micromouse"></a>
+              </div>
+            </div>
+            <div>
+              <div class="proj_name">
+                <span class="txt_md font2 wtext">8-Segment LED Digital Clock</span>
+              </div>
+              <div class="proj_img">
+                <a class="proj_menu" data-rel="6" href="#popup"><img src="./img/ledclock2.jpg" alt="8-Segment LED Digital Clock"></a>
+              </div>
+            </div>
+          </div>
+          <div id="popup">
+            <div></div>
+            <div id="proj_desc">
+              <div id="proj_desc_left">
+                <div id="proj_desc_left_top">
+                  <div><span id="popup_title" class="txt_sm font1 wtext bold">Title Here</span></div>
+                  <div></div>
+                </div>
+                <div>
+                  <span id="popup_desc" class="txt_sm font2 wtext">Text Here</span>
+                </div>
+              </div>
+              <!--End of left-->
+              <div id="proj_desc_right">
+                <div><a href="#" class="close txt_md font2 bold">X</a></div>
+                <div><img id="popup_img" src="./img/calculator.jpg"></div>
+                <div>
+                  <span class="txt_xs font2 wtext bold uline">Used&#58;</span>
+                  <span id="popup_used" class="txt_xs font2 wtext">Tech List</span>
+                </div>
+              </div>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <!-- RIGHT MENU -->
+    <div class="col right">
+        <div id="vline"></div>
+        <div class="links">
+          <a href="https://github.com/LuisAbrogar/" target="_blank">
+            <img src="./img/github.png" alt="GitHub"
+              onmouseover="this.src='./img/github2.png'"
+              onmouseout="this.src='./img/github.png'">
+          </a>
+        </div>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/luis-abrogar/" target="_blank">
+            <img src="./img/linkedin.png" alt="LinkedIn"
+              onmouseover="this.src='./img/linkedin2.png'"
+              onmouseout="this.src='./img/linkedin.png'">
+            </a>
+        </div>
+        <div class="links">
+          <a href="mailto:luis.abrogar@gmail.com" target="_blank">
+            <img src="./img/email.png" alt="Email"
+              onmouseover="this.src='./img/email2.png'"
+              onmouseout="this.src='./img/email.png'">
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!--JavaScript-->
+    <script src="js\jquery-3.7.1.min.js"></script>
+    <script src="js\script.js"></script>
+  </body>
 </html>
