@@ -11,3 +11,5 @@ Updates:
   - added resume download button
 - 11/11
   - updated 'About Me' page layout
+- 3/20/25
+    - Full update to site layout
